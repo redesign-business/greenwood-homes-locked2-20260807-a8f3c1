@@ -2,28 +2,28 @@
 @config "../tailwind.config.js";
 
 :root {
-  --color-background-primary: #ffffff;
-  --color-background-secondary: #eeeeee;
-  --color-background-tertiary: #666666;
-  --color-background-alternative: #000000;
-  --color-text-primary: #000000;
-  --color-text-secondary: #666666;
-  --color-text-alternative: #ffffff;
-  --color-border-primary: #000000;
-  --color-border-secondary: #aaaaaa;
-  --color-border-alternative: #ffffff;
-  --color-accent: #000000;
-  --color-accent-contrast: #ffffff;
+  --color-background-primary: #f5f1e8;
+  --color-background-secondary: #e8e1d4;
+  --color-background-tertiary: #726b5e;
+  --color-background-alternative: #191713;
+  --color-text-primary: #191713;
+  --color-text-secondary: #726b5e;
+  --color-text-alternative: #f5f1e8;
+  --color-border-primary: #191713;
+  --color-border-secondary: #b8b0a2;
+  --color-border-alternative: #f5f1e8;
+  --color-accent: #8b9d20;
+  --color-accent-contrast: #191713;
   --scheme-background: var(--color-background-primary);
   --scheme-foreground: var(--color-background-primary);
   --scheme-text: var(--color-text-primary);
   --scheme-border: var(--color-border-primary);
   --scheme-button-text: var(--color-accent-contrast);
-  --font-sans: Arial, sans-serif;
+  --font-sans: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
   --font-display: var(--font-sans);
   --space-section-sm: 4rem;
   --space-section-md: 6rem;
-  --space-section-lg: 7rem;
+  --space-section-lg: 8rem;
   --radius-button: 0rem;
   --radius-card: 0rem;
   --radius-image: 0rem;
@@ -51,8 +51,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 img {
   display: block;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
 }
